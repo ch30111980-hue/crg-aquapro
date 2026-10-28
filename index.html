@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Walmart AquaPro | Recherche Robinetterie Moderne & Équipements de l'Eau</title>
+  
+  <!-- Polices Modernes Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Arrière-Plan Aquatique avec Vagues & Effets de Lumière d'Eau -->
+  <div class="water-background-wrapper">
+    <div class="water-caustics-layer"></div>
+    <div class="water-wave-layer wave-1"></div>
+    <div class="water-wave-layer wave-2"></div>
+    <div class="water-glow-orb orb-1"></div>
+    <div class="water-glow-orb orb-2"></div>
+  </div>
+
+  <!-- Barre Supérieure Moderne -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-group">
+        <div class="brand-water-icon">
+          <svg viewBox="0 0 24 24" fill="none" class="drop-icon">
+            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" fill="url(#blueWaterGrad)" stroke="#00F0FF" stroke-width="1.5"/>
+            <defs>
+              <linearGradient id="blueWaterGrad" x1="12" y1="2.69" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00F0FF"/>
+                <stop offset="0.6" stop-color="#0071DC"/>
+                <stop offset="1" stop-color="#002D72"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span class="water-splash-ring"></span>
+        </div>
+        <div>
+          <div class="brand-title">WALMART <span class="highlight-cyan">AQUAPRO</span></div>
+          <div class="brand-subtitle">Explorer & Recherche Robinetterie de Haute Précision</div>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <a href="https://www.walmart.com/cp/faucets/4134_1072864_1028741" target="_blank" class="btn btn-walmart-live" id="btn-open-walmart-direct">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm0 14a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1zm9-5a1 1 0 0 1 1 1 1 1 0 0 1-1 1h-4a1 1 0 1 1 0-2h4zm-14 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1H3a1 1 0 1 1 0-2h4zm11.36-6.36a1 1 0 0 1 1.42 1.41l-2.83 2.83a1 1 0 0 1-1.42-1.41l2.83-2.83zM6.05 16.54a1 1 0 0 1 1.41 1.41l-2.83 2.83a1 1 0 0 1-1.41-1.41l2.83-2.83zm12.73 2.83a1 1 0 0 1 0 1.41 1 1 0 0 1-1.41 0l-2.83-2.83a1 1 0 1 1 1.41-1.41l2.83 2.83zM7.46 7.46a1 1 0 0 1 0 1.41L4.64 11.7a1 1 0 0 1-1.41-1.41l2.82-2.83a1 1 0 0 1 1.41 0z"/>
+          </svg>
+          <span>Ouvrir Rayon Walmart.com</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section Hero avec Moteur de Recherche Aquatique -->
+  <main class="main-container">
+    <section class="search-hero">
+      <div class="water-badge">
+        <span class="water-drop-pulsar"></span>
+        TECHNOLOGIE HYDRO-DESIGN & ROBINETTERIE MODERNE
+      </div>
+
+      <h1 class="hero-heading">
+        Trouvez la <span class="text-water-gradient">Robinetterie Idéale</span> <br>
+        sur Walmart avec Simulation d'Écoulement
+      </h1>
+      
+      <p class="hero-description">
+        Moteur intelligent pour filtrer les robinets de salle de bain, mitigeurs cuisine cascade, douches encastrées et systèmes d'économie d'eau certifiés WaterSense aux meilleurs prix Walmart.
+      </p>
+
+      <!-- Barre de Recherche Hybride Dynamique -->
+      <div class="search-box-card">
+        <div class="search-input-group">
+          <svg class="search-lens-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="water-search-input" class="water-search-input" placeholder="Ex: Robinet cascade noir mat, Mitigeur cuisine douchette, Robinet automatique..." autocomplete="off">
+          <button class="btn btn-search-trigger" id="btn-trigger-search">
+            <span>Rechercher</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+
+        <!-- Mots-Clés Tendances Rapides -->
+        <div class="quick-keywords">
+          <span class="keywords-label">Recherches Populaires :</span>
+          <button class="keyword-chip" data-query="Cascade">Effet Cascade (Waterfall)</button>
+          <button class="keyword-chip" data-query="Noir Mat">Noir Mat Moderne</button>
+          <button class="keyword-chip" data-query="Automatique">Sans Contact (Sensor)</button>
+          <button class="keyword-chip" data-query="Doré">Laiton Brossé & Or</button>
+          <button class="keyword-chip" data-query="Cuisine">Cuisine Douchette 360°</button>
+          <button class="keyword-chip" data-query="Éco">WaterSense Éco 1.2 GPM</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filtres Avancés : Rayons & Finitions -->
+    <section class="filters-section">
+      <div class="filter-row">
+        <div class="filter-title">RAYON :</div>
+        <div class="pill-group" id="category-filter-group">
+          <button class="pill-btn active" data-cat="all">Tous les Produits</button>
+          <button class="pill-btn" data-cat="bathroom">Robinetterie Salle de Bain</button>
+          <button class="pill-btn" data-cat="kitchen">Mitigeurs Cuisine Pro</button>
+          <button class="pill-btn" data-cat="shower">Colonnes & Ciel de Douche</button>
+          <button class="pill-btn" data-cat="sensor">Robinetterie Sans Contact</button>
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <div class="filter-title">FINITION :</div>
+        <div class="pill-group" id="finish-filter-group">
+          <button class="finish-pill active" data-finish="all">Toutes</button>
+          <button class="finish-pill" data-finish="chrome">
+            <span class="color-swatch swatch-chrome"></span> Chromé Miroir
+          </button>
+          <button class="finish-pill" data-finish="black">
+            <span class="color-swatch swatch-black"></span> Noir Mat
+          </button>
+          <button class="finish-pill" data-finish="gold">
+            <span class="color-swatch swatch-gold"></span> Or Brossé
+          </button>
+          <button class="finish-pill" data-finish="nickel">
+            <span class="color-swatch swatch-nickel"></span> Nickel Brossé
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compteur et Résultats -->
+    <div class="results-header">
+      <div class="results-count" id="results-count">12 articles disponibles</div>
+      <div class="sort-selector">
+        <label for="sort-by">Trier par :</label>
+        <select id="sort-by" class="sort-select">
+          <option value="featured">Sélection Vedette</option>
+          <option value="price-asc">Prix : Moins Cher</option>
+          <option value="price-desc">Prix : Plus Élevé</option>
+          <option value="rating">Avis Clients Walmart</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Grille des Produits -->
+    <div class="products-grid" id="faucets-grid">
+      <!-- Rendu dynamique par app.js -->
+    </div>
+  </main>
+
+  <!-- ======================================================================
+       MODALE MODERNE : FENÊTRE D'INSPECTION & SIMULATION DU JET D'EAU
+       ====================================================================== -->
+  <div class="water-modal-backdrop" id="water-modal-backdrop">
+    <div class="water-modal-window" id="water-modal-window">
+      <button class="modal-close-icon" id="btn-close-modal">&times;</button>
+      
+      <div class="modal-grid">
+        <!-- Zone Visuelle & Simulateur de Jet d'Eau Interactif -->
+        <div class="modal-visual-zone">
+          <div class="simulator-card">
+            <div class="simulator-header">
+              <span class="pulse-indicator"></span>
+              <span>SIMULATEUR DE JET D'EAU HYDRAULIQUE</span>
+            </div>
+
+            <!-- Faucet Canvas & Visualisation -->
+            <div class="faucet-stage" id="faucet-stage">
+              <img src="" alt="Robinet sélectionné" id="modal-faucet-img" class="stage-faucet-img">
+              
+              <!-- Flux d'Eau Animé (Activé par Bouton) -->
+              <div class="water-jet-stream" id="water-jet-stream">
+                <div class="water-drop-spray"></div>
+                <div class="water-drop-spray spray-2"></div>
+                <div class="water-drop-spray spray-3"></div>
+              </div>
+
+              <!-- Bassin d'impact de l'eau avec ondulations -->
+              <div class="water-basin" id="water-basin">
+                <div class="ripple ripple-1"></div>
+                <div class="ripple ripple-2"></div>
+                <div class="ripple ripple-3"></div>
+              </div>
+            </div>
+
+            <!-- Contrôle Interactif On/Off de l'Eau -->
+            <div class="simulator-controls">
+              <button class="btn btn-water-flow" id="btn-toggle-water">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+                <span id="water-btn-text">Ouvrir le Robinet (Débit d'Eau)</span>
+              </button>
+              <div class="flow-rate-readout" id="flow-readout">Débit : 0.0 GPM (Robinet Fermé)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zone Détails & Achat Direct Walmart -->
+        <div class="modal-details-zone">
+          <div class="modal-badges-row">
+            <span class="walmart-badge" id="modal-walmart-badge">Walmart's Choice</span>
+            <span class="watersense-badge" id="modal-watersense-badge">💧 WaterSense 1.2 GPM</span>
+          </div>
+
+          <h2 class="modal-product-title" id="modal-title">Titre du Robinet</h2>
+          
+          <div class="modal-meta-row">
+            <div class="modal-rating" id="modal-rating">★★★★★ 4.9 (1,420 avis)</div>
+            <div class="modal-brand-tag" id="modal-brand">Marque Officielle</div>
+          </div>
+
+          <div class="modal-price-box">
+            <div class="modal-current-price" id="modal-price">$89.99</div>
+            <div class="modal-old-price" id="modal-old-price">$129.99</div>
+            <div class="modal-save-tag" id="modal-save">Économisez $40.00</div>
+          </div>
+
+          <p class="modal-description" id="modal-desc">
+            Description technique détaillée du modèle, cartouche céramique sans fuite et finition anti-traces.
+          </p>
+
+          <div class="modal-specs-list" id="modal-specs">
+            <!-- Rendu des spécifications techniques -->
+          </div>
+
+          <!-- Bouton d'Achat & Redirection Immédiate Walmart -->
+          <div class="modal-cta-group">
+            <a href="#" target="_blank" class="btn btn-walmart-primary" id="modal-walmart-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1zm0 14a1 1 0 0 1 1 1v4a1 1 0 1 1-2 0v-4a1 1 0 0 1 1-1zm9-5a1 1 0 0 1 1 1 1 1 0 0 1-1 1h-4a1 1 0 1 1 0-2h4zm-14 0a1 1 0 0 1 1 1 1 1 0 0 1-1 1H3a1 1 0 1 1 0-2h4z"/>
+              </svg>
+              <span>Voir ce Produit sur Walmart.com</span>
+            </a>
+            
+            <button class="btn btn-copy-ref" id="btn-copy-ref">
+              <span>Copier la Référence</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
