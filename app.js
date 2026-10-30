@@ -327,6 +327,141 @@ const CRG_CATALOG = [
     },
     flowRate: 10.0,
     pressure: "16 Bars"
+  },
+  {
+    id: "crg-15",
+    name: "Système Filtration Osmoseur Inverse 5 Niveaux AquaFilter",
+    category: "filtration",
+    finish: "chrome",
+    brand: "AquaFilter (The Clear Choice)",
+    priceDZD: 32500,
+    oldPriceDZD: 38000,
+    inStock: true,
+    rating: 5.0,
+    badge: "Pureté Absolue 0.0001µm",
+    image: "assets/3d_aquafilter_osmoseur.svg",
+    description: "Système complet d'osmose inverse 5 étages avec membrane TFC 75 GPD, triple préfiltration (sédiment 5µm, charbon actif GAC, bloc carbone CTO) et post-filtre reminéralisant pour eau pure instantanée.",
+    specs: {
+      "Origine": "AquaFilter Europe (The Clear Choice)",
+      "Rendement": "75 GPD (~280 Litres/jour)",
+      "Étages": "5 Niveaux de Filtration",
+      "Pression Entrée": "2.8 à 6.0 Bars",
+      "Garantie": "2 Ans SAV Dépôt Oran"
+    },
+    flowRate: 4.5,
+    pressure: "4.0 Bar"
+  },
+  {
+    id: "crg-16",
+    name: "Mitigeur Lavabo Corps Élevé Haksu Su Armatürleri",
+    category: "bathroom",
+    finish: "chrome",
+    brand: "Haksu (Turquie)",
+    priceDZD: 16800,
+    oldPriceDZD: 19500,
+    inStock: true,
+    rating: 4.8,
+    badge: "Laiton Massif Certifié",
+    image: "assets/3d_faucet_cascade.svg",
+    description: "Mitigeur lavabo monocommande Haksu en laiton forgé haute résistance, cartouche céramique 35mm et aérateur anti-calcaire Neoperl. Idéal pour vasques à poser.",
+    specs: {
+      "Marque": "Haksu Su Armatürleri",
+      "Alliage": "Laiton CW617N Haute Pureté",
+      "Cartouche": "Céramique 35mm Longue Durée",
+      "Finition": "Chromé Électrolytique 15µm",
+      "Garantie": "5 Ans Totale CRG"
+    },
+    flowRate: 8.0,
+    pressure: "3.0 Bar"
+  },
+  {
+    id: "crg-17",
+    name: "Bâti-Support Universel & Plaque Double Touche Alca / Fominaya",
+    category: "shower",
+    finish: "black",
+    brand: "Alca / Fominaya",
+    priceDZD: 38500,
+    oldPriceDZD: 44000,
+    inStock: true,
+    rating: 4.9,
+    badge: "Charge 400kg Certifiée",
+    image: "assets/3d_chasse_cumulus.svg",
+    description: "Châssis autoportant en acier thermolaqué résistant à 400 kg avec réservoir isolé anti-condensation, mécanisme de chasse d'eau Fominaya et plaque de commande double touche Alca.",
+    specs: {
+      "Norme": "NF / CE / EN 14055",
+      "Résistance": "Testée 400 kg",
+      "Volume Chasse": "Double débit 3L / 6L",
+      "Garantie": "10 Ans Châssis"
+    },
+    flowRate: 15.0,
+    pressure: "PN 10 Bars"
+  },
+  {
+    id: "crg-18",
+    name: "Vase d'Expansion Chauffage & Sanitaire Aquasystem 24L - 10 Bars",
+    category: "heating",
+    finish: "thermal",
+    brand: "Aquasystem (Italie)",
+    priceDZD: 11500,
+    oldPriceDZD: 13500,
+    inStock: true,
+    rating: 4.9,
+    badge: "Membrane EPDM Italie",
+    image: "assets/products/vase_expansion.png",
+    description: "Réservoir sous pression à membrane interchangeable EPDM alimentaire de fabrication 100% italienne. Absorption des dilatations thermiques pour chaudières et réseaux de pompage.",
+    specs: {
+      "Fabricant": "Aquasystem S.r.l (Italie)",
+      "Capacité": "24 Litres",
+      "Pression Max": "10 Bars",
+      "Raccord": "1\" Mâle Laiton",
+      "Température": "-10°C à +100°C"
+    },
+    flowRate: 20.0,
+    pressure: "10 Bars Max"
+  },
+  {
+    id: "crg-19",
+    name: "Couronne Tube Cuivre Écroui & Recuit Halcor Ø12 à Ø28 mm",
+    category: "piping",
+    finish: "brass",
+    brand: "Halcor (Grèce / Europe)",
+    priceDZD: 8900,
+    oldPriceDZD: 10400,
+    inStock: true,
+    rating: 5.0,
+    badge: "Cuivre Pur 99.9% Cu-DHP",
+    image: "assets/3d_colliers_tubes.svg",
+    description: "Tubes en cuivre pur désoxydé au phosphore Cu-DHP certifié EN 1057 pour réseaux sanitaires, gaz naturel et chauffage central haute température.",
+    specs: {
+      "Norme": "EN 1057 / CE",
+      "Pureté": "99.90% Cuivre Min.",
+      "Diamètres": "Ø12, Ø14, Ø16, Ø18, Ø22, Ø28 mm",
+      "État": "Recuit en couronne / Barres 5m"
+    },
+    flowRate: 30.0,
+    pressure: "45 Bars Max"
+  },
+  {
+    id: "crg-20",
+    name: "Pack Colliers de Serrage Isophoniques Acier Lourd EPDM CRG (Lot 20)",
+    category: "piping",
+    finish: "chrome",
+    brand: "CRG Fixation",
+    priceDZD: 2800,
+    oldPriceDZD: 3400,
+    inStock: true,
+    rating: 4.8,
+    badge: "Isolation Acoustique EPDM",
+    image: "assets/3d_colliers_tubes.svg",
+    description: "Colliers de fixation double vis en acier zingué électrolytique avec garniture caoutchouc EPDM anti-vibrations et atténuation acoustique selon DIN 4109.",
+    specs: {
+      "Alliage": "Acier électrozingué 8-12µm",
+      "Garniture": "EPDM profilé (-40°C à +110°C)",
+      "Filetage": "Embase M8 / M10",
+      "Norme": "DIN 4109"
+    },
+    flowRate: 0.0,
+    pressure: "Fixation Lourde"
   }
 ];
 
@@ -804,6 +939,19 @@ window.filterByBrandKeyword = function(kw) {
   if (searchInputEl) searchInputEl.value = kw;
   document.getElementById("catalogue-section").scrollIntoView({ behavior: "smooth" });
   renderProducts();
+};
+
+window.selectCategoryFromPoster = function(cat) {
+  currentCategory = cat;
+  searchQuery = "";
+  const searchInputEl = document.getElementById("water-search-input");
+  if (searchInputEl) searchInputEl.value = "";
+  document.querySelectorAll("#category-filter-group .pill-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.cat === cat);
+  });
+  renderProducts();
+  const catSection = document.getElementById("catalogue-section");
+  if (catSection) catSection.scrollIntoView({ behavior: "smooth" });
 };
 
 function setupFilterListeners() {

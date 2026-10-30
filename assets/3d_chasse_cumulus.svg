@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="frameBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0051B5"/>
+      <stop offset="50%" stop-color="#0088FF"/>
+      <stop offset="100%" stop-color="#022B69"/>
+    </linearGradient>
+
+    <linearGradient id="tankWhite" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CBD5E1"/>
+      <stop offset="40%" stop-color="#FFFFFF"/>
+      <stop offset="80%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+
+    <linearGradient id="goldPlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2B2"/>
+      <stop offset="50%" stop-color="#E5B84B"/>
+      <stop offset="100%" stop-color="#8B6313"/>
+    </linearGradient>
+
+    <radialGradient id="sanitaryBase" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.48"/>
+      <stop offset="50%" stop-color="#E5B84B" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#030711" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="shadowSan" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="12" flood-color="#000000" flood-opacity="0.78"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="190" cy="336" rx="140" ry="22" fill="url(#sanitaryBase)"/>
+  <ellipse cx="190" cy="336" rx="100" ry="14" fill="none" stroke="#00F0FF" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.7"/>
+
+  <g filter="url(#shadowSan)">
+    <!-- Concealed Cistern Frame (Bâti-Support Alca / Fominaya) -->
+    <rect x="82" y="48" width="118" height="268" rx="8" fill="none" stroke="url(#frameBlue)" stroke-width="12"/>
+    <!-- Insulated HDPE Flush Tank -->
+    <rect x="96" y="76" width="90" height="114" rx="10" fill="url(#tankWhite)" stroke="#94A3B8" stroke-width="1.2"/>
+    <!-- Dual-Flush Designer Plate (Or Royal & Noir Mat) -->
+    <rect x="112" y="102" width="58" height="38" rx="6" fill="#0B1325" stroke="url(#goldPlate)" stroke-width="2"/>
+    <circle cx="131" cy="121" r="9" fill="url(#goldPlate)"/>
+    <circle cx="151" cy="121" r="6" fill="url(#goldPlate)"/>
+
+    <!-- Discharge Pipe Elbow -->
+    <path d="M 141 190 L 141 255" stroke="#1E293B" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="141" cy="255" r="14" fill="#0F172A" stroke="#00F0FF" stroke-width="2"/>
+
+    <!-- Cumulus / Chauffe-Eau Vertical & Nofer Inox Cylinder (Right) -->
+    <rect x="218" y="88" width="94" height="196" rx="47" fill="url(#tankWhite)" stroke="#00F0FF" stroke-width="1.5"/>
+    <rect x="234" y="102" width="16" height="165" rx="8" fill="#FFFFFF" opacity="0.65"/>
+    <!-- Digital Thermostat Gauge on Cumulus -->
+    <rect x="245" y="218" width="40" height="22" rx="6" fill="#040914" stroke="#FF5E00" stroke-width="1.2"/>
+    <text x="251" y="233" font-family="monospace, sans-serif" font-weight="900" font-size="11" fill="#FF5E00">60°C</text>
+    <text x="236" y="152" font-family="system-ui, sans-serif" font-weight="900" font-size="11" fill="#022B69">NOFER•ALCA</text>
+  </g>
+
+  <g transform="translate(18, 22)">
+    <rect x="0" y="0" width="162" height="28" rx="14" fill="#081226" fill-opacity="0.92" stroke="#00F0FF" stroke-width="1.2"/>
+    <circle cx="15" cy="14" r="4.5" fill="#E5B84B"/>
+    <text x="26" y="18" font-family="system-ui, sans-serif" font-weight="800" font-size="10" fill="#F8FAFC" letter-spacing="0.8">ALCA • FOMINAYA • NOFER</text>
+  </g>
+</svg>
+
