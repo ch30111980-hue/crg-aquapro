@@ -3,56 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRG AquaPro | Robinetterie Moderne & Solutions Hydrauliques Gros — Oran</title>
-  
-  <!-- Polices Modernes Google Fonts -->
+  <title>SARL CRG Oran | Robinetterie Haute Précision, Chauffage & Solutions Hydrauliques 3D</title>
+  <meta name="description" content="Comptoir de Robinetterie Générale (SARL CRG) à Oran — 4ème Périphérique Es-Sénia. Showroom 3D & Distribution en gros et détail : Miro Europe, Wilo, General Fittings, Halcor, Alba, Chauffage Central & Vannerie PN40.">
+
+  <!-- Polices Google Fonts Haut de Gamme -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/svg+xml" href="assets/crg_modern_logo.svg">
+  <link rel="icon" type="image/svg+xml" href="assets/crg_flame_emblem.svg">
 </head>
 <body>
 
-  <!-- Arrière-Plan Aquatique avec Vagues & Effets de Lumière d'Eau -->
-  <div class="water-background-wrapper">
-    <div class="water-caustics-layer"></div>
-    <div class="water-wave-layer wave-1"></div>
-    <div class="water-wave-layer wave-2"></div>
-    <div class="water-glow-orb orb-1"></div>
-    <div class="water-glow-orb orb-2"></div>
+  <!-- ======================================================================
+       ARRIÈRE-PLAN HYDRO-THERMIQUE 3D (L'Eau Cyan & La Flamme Ambre-Rubis)
+       ====================================================================== -->
+  <div class="ambient-stage-bg" aria-hidden="true">
+    <div class="ambient-grid-perspective"></div>
+    <div class="ambient-caustics"></div>
+    <div class="ambient-orb orb-aqua"></div>
+    <div class="ambient-orb orb-flame"></div>
+    <div class="ambient-orb orb-gold"></div>
   </div>
 
-  <!-- Barre Supérieure Moderne CRG -->
-  <header class="app-header">
+  <!-- ======================================================================
+       BANDEAU SUPÉRIEUR PRO (Statut Dépôt Live, Horaires & Lignes Directes)
+       ====================================================================== -->
+  <div class="top-utility-bar">
+    <div class="top-utility-inner">
+      <div class="utility-left">
+        <span class="live-status-pill" id="depot-live-badge">
+          <span class="status-dot"></span>
+          <span id="depot-status-text">Dépôt 4ème Périphérique Oran • Stock Permanent Disponible</span>
+        </span>
+        <span class="utility-divider">|</span>
+        <span class="utility-address">📍 Îlot N°08, Zone Industrielle, 4ème Périphérique, Es-Sénia — Oran</span>
+      </div>
+      <div class="utility-right">
+        <a href="tel:+213560252632" class="utility-phone-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Commercial : <strong>0560 25 26 32</strong></span>
+        </a>
+        <a href="tel:+213560120269" class="utility-phone-link hide-mobile">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Chantiers : <strong>0560 12 02 69</strong></span>
+        </a>
+        <span class="utility-phone-link hide-tablet">Fixe : <strong>041 51 51 56</strong></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       HEADER PRINCIPAL STICKY AVEC LE LOGO CRG & SA FLAMME ARDENTE
+       ====================================================================== -->
+  <header class="app-header" id="main-header">
     <div class="header-inner">
       <div class="brand-group">
-        <!-- Logo Moderne Vectoriel CRG AquaPro -->
-        <a href="#" class="brand-logo-link" title="SARL CRG Oran - Accueil">
-          <img src="assets/crg_modern_logo.svg" alt="CRG AquaPro Logo Moderne" class="crg-vector-logo">
+        <a href="#" class="brand-logo-link" title="SARL CRG Oran — Comptoir de Robinetterie Générale">
+          <img src="assets/crg_modern_logo.svg" alt="Logo CRG Oran avec Goutte d'Eau et Flamme" class="crg-vector-logo">
         </a>
       </div>
 
-      <!-- Coordonnées Dépôt & Accès Direct -->
-      <div class="header-actions">
-        <div class="header-depot-badge">
-          <span class="pulse-green"></span>
-          <div class="depot-info">
-            <span class="depot-title">Dépôt Central 4ème Périphérique</span>
-            <span class="depot-sub">Zone Industrielle, Es-Sénia • Oran</span>
-          </div>
-        </div>
+      <!-- Navigation Rapide Fluide -->
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#hero-3d" class="nav-item active">Showroom 3D</a>
+        <a href="#affiches-3d" class="nav-item">
+          <span class="flame-dot"></span>Affiches Pro 3D
+        </a>
+        <a href="#catalogue-section" class="nav-item">Catalogue &amp; Prix</a>
+        <a href="#entreprise-b2b" class="nav-item">Espace Entreprises</a>
+        <a href="#contact-hub" class="nav-item">Contact &amp; GPS</a>
+      </nav>
 
-        <a href="https://wa.me/213560252632?text=Bonjour%20CRG%20Oran,%20je%20souhaite%20un%20devis%20de%20robinetterie%20en%20gros" target="_blank" class="btn btn-whatsapp-header" id="btn-header-whatsapp">
+      <!-- Actions Directes Header : Devis Pro + WhatsApp + GPS -->
+      <div class="header-actions">
+        <button class="btn btn-quote-drawer" id="btn-open-drawer" title="Ouvrir mon Devis Pro CRG">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          <span>Mon Devis Pro</span>
+          <span class="drawer-count-badge" id="quote-count-badge">0</span>
+        </button>
+
+        <a href="https://wa.me/213560252632?text=Bonjour%20SARL%20CRG%20Oran,%20je%20souhaite%20un%20devis%20ou%20un%20renseignement%20commercial." target="_blank" class="btn btn-whatsapp-header" id="btn-header-whatsapp">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.181-.076.355.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
           </svg>
-          <span>Commercial : 0560 25 26 32</span>
+          <span>WhatsApp Direct</span>
         </a>
 
-        <a href="https://maps.google.com/?q=CRG+Comptoir+de+Robinetterie+Générale+Es+Senia+Oran" target="_blank" class="btn btn-gps-locate" title="Ouvrir dans Google Maps">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <a href="https://maps.google.com/?q=CRG+Comptoir+de+Robinetterie+Générale+Es+Senia+Oran" target="_blank" class="btn btn-gps-locate" title="Itinéraire GPS vers le Dépôt 4ème Périphérique">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
             <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"/>
             <circle cx="12" cy="10" r="3"/>
           </svg>
@@ -62,130 +107,640 @@
     </div>
   </header>
 
-  <!-- Section Hero avec Moteur de Recherche Aquatique CRG -->
   <main class="main-container">
-    <section class="search-hero">
-      <div class="water-badge">
-        <span class="water-drop-pulsar"></span>
-        COMPTOIR DE ROBINETTERIE GÉNÉRALE • ORAN (DEPUIS 2004)
-      </div>
 
-      <h1 class="hero-heading">
-        Robinetterie <span class="text-water-gradient">Haute Précision</span> & <br>
-        Équipements Hydrauliques Gros à Oran
-      </h1>
-      
-      <p class="hero-description">
-        Distributeur officiel en gros pour les professionnels du bâtiment, installateurs et revendeurs : Miro Europe, Wilo, General Fittings, Halcor, Alba et Nofer. Stock permanent disponible au dépôt du 4ème Périphérique Es-Sénia avec simulation de jet d'eau interactive.
-      </p>
+    <!-- ====================================================================
+         SECTION 1 : HERO 3D IMMERSIF — L'ALLIANCE DE L'EAU & DE LA FLAMME
+         ==================================================================== -->
+    <section class="hero-3d-section" id="hero-3d">
+      <div class="hero-grid-layout">
+        
+        <!-- Colonne Gauche : Message d'Impact, Sélecteur Particulier/Entreprise & Recherche -->
+        <div class="hero-left-col">
+          <div class="dual-energy-badge">
+            <span class="badge-aqua-dot"></span>
+            <span class="badge-flame-dot"></span>
+            <span>L'EXCELLENCE DE L'EAU &amp; DE LA FLAMME • DEPUIS 2004 À ORAN</span>
+          </div>
 
-      <!-- Barre de Recherche Hybride Dynamique -->
-      <div class="search-box-card">
-        <div class="search-input-group">
-          <svg class="search-lens-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <input type="text" id="water-search-input" class="water-search-input" placeholder="Rechercher par article : Mitigeur Miro cascade, Pompe Wilo, Multicouche General Fittings, Vanne PN40..." autocomplete="off">
-          <button class="btn btn-search-trigger" id="btn-trigger-search">
-            <span>Rechercher</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-          </button>
+          <h1 class="hero-heading">
+            La Référence <span class="text-aqua-gradient">Robinetterie</span>,<br>
+            <span class="text-flame-gradient">Chauffage</span> &amp; <span class="text-gold-gradient">Hydraulique Pro</span>
+          </h1>
+
+          <p class="hero-description">
+            Que vous soyez une <strong>Entreprise du BTPH, Promoteur, Installateur</strong> ou un <strong>Particulier exigeant pour votre Villa</strong> : découvrez en 3D le stock géant de la <strong>SARL CRG Oran</strong> (4ème Périphérique Es-Sénia). Distributeur officiel <em>Miro Europe, Wilo, General Fittings, Halcor &amp; Alba</em>.
+          </p>
+
+          <!-- Sélecteur d'Expérience : Entreprise B2B vs Particulier Prestige -->
+          <div class="audience-switcher" role="tablist" aria-label="Choisir votre profil">
+            <button class="audience-btn active" data-audience="pro" id="aud-btn-pro">
+              <span class="aud-icon">🏢</span>
+              <div class="aud-text">
+                <strong>Entreprise, Chantier &amp; Revendeur</strong>
+                <span>Tarifs Gros HT • Devis Quantitatif • Stock Palette</span>
+              </div>
+            </button>
+            <button class="audience-btn" data-audience="particulier" id="aud-btn-part">
+              <span class="aud-icon">🏠</span>
+              <div class="aud-text">
+                <strong>Particulier, Villa &amp; Architecte</strong>
+                <span>Showroom Luxe • Garantie 5 Ans • Conseil Sur-Mesure</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Moteur de Recherche Instantané Hydro-Thermique -->
+          <div class="search-box-card">
+            <div class="search-input-group">
+              <svg class="search-lens-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="water-search-input" class="water-search-input" placeholder="Rechercher : Mitigeur Miro Or, Chaudière, Pompe Wilo, Multicouche, Vanne PN40..." autocomplete="off">
+              <button class="btn btn-search-trigger" id="btn-trigger-search">
+                <span>Explorer</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+
+            <div class="quick-keywords">
+              <span class="keywords-label">Accès Rapide :</span>
+              <button class="keyword-chip chip-aqua" data-query="Miro">💧 Miro Italie</button>
+              <button class="keyword-chip chip-flame" data-query="Chaudière">🔥 Chaudières &amp; Radiateurs</button>
+              <button class="keyword-chip chip-aqua" data-query="Wilo">⚡ Pompes Wilo</button>
+              <button class="keyword-chip chip-gold" data-query="Or Brossé">✨ Or Royal PVD</button>
+              <button class="keyword-chip chip-aqua" data-query="General Fittings">🔧 Multicouche Italie</button>
+              <button class="keyword-chip chip-flame" data-query="PN40">🛡️ Vannes Lourdes PN40</button>
+            </div>
+          </div>
+
+          <!-- Statistiques de Confiance CRG -->
+          <div class="hero-metrics-row">
+            <div class="metric-card">
+              <span class="metric-val">+22 Ans</span>
+              <span class="metric-lbl">Leadership Régional Oran</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">100%</span>
+              <span class="metric-lbl">Certifié ACS / CE / ISO</span>
+            </div>
+            <div class="metric-card metric-flame">
+              <span class="metric-val">Stock Géant</span>
+              <span class="metric-lbl">4ème Périphérique Es-Sénia</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">Devis &lt; 15m</span>
+              <span class="metric-lbl">Réponse Commerciale Pro</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Mots-Clés Tendances Rapides CRG -->
-        <div class="quick-keywords">
-          <span class="keywords-label">Recherches Directes Chantier :</span>
-          <button class="keyword-chip" data-query="Miro">Miro Europe (Italie)</button>
-          <button class="keyword-chip" data-query="Cascade">Mitigeur Effet Cascade</button>
-          <button class="keyword-chip" data-query="Wilo">Circulateurs Wilo</button>
-          <button class="keyword-chip" data-query="General Fittings">Raccords General Fittings</button>
-          <button class="keyword-chip" data-query="Noir Mat">Noir Mat Moderne</button>
-          <button class="keyword-chip" data-query="Or Brossé">Or & Laiton Brossé</button>
-          <button class="keyword-chip" data-query="Vanne">Vannes Sphère PN40</button>
+        <!-- Colonne Droite : STUDIO HOLOGRAPHIQUE 3D INTERACTIF CRG -->
+        <div class="hero-right-col">
+          <div class="holo-stage-3d" id="hero-holo-stage">
+            <!-- En-tête du Studio 3D -->
+            <div class="holo-stage-header">
+              <div class="holo-title-group">
+                <span class="holo-live-dot"></span>
+                <span>STUDIO 3D INTERACTIF CRG • TOURNEZ À 360°</span>
+              </div>
+              <div class="holo-mode-pills">
+                <button class="holo-mode-btn active" data-mode="aqua" title="Mode Eau & Robinetterie">💧 Eau</button>
+                <button class="holo-mode-btn" data-mode="flame" title="Mode Flamme & Chauffage">🔥 Flamme</button>
+                <button class="holo-mode-btn" data-mode="brass" title="Mode Industrie PN40">⚙️ PN40</button>
+              </div>
+            </div>
+
+            <!-- Scène 3D Rotative Interactive -->
+            <div class="holo-viewport-3d" id="holo-viewport-3d">
+              <!-- Canvas de Particules 3D (Gouttes d'eau / Étincelles thermiques) -->
+              <canvas id="hero-particles-canvas" class="hero-particles-canvas"></canvas>
+
+              <!-- Anneaux Gyroscopiques 3D -->
+              <div class="gyro-ring ring-outer"></div>
+              <div class="gyro-ring ring-middle"></div>
+              <div class="gyro-ring ring-base-platform"></div>
+
+              <!-- Objet 3D Central Manipulable -->
+              <div class="holo-object-pivot" id="holo-object-pivot">
+                <!-- Emblème Flottant CRG Flamme -->
+                <div class="floating-crg-crest">
+                  <img src="assets/crg_flame_emblem.svg" alt="Emblème CRG Flamme" class="crest-svg">
+                </div>
+
+                <!-- Produit Vedette en Lévitation 3D -->
+                <img src="assets/3d_faucet_cascade.svg" alt="Produit Vedette 3D CRG" id="hero-3d-product-img" class="hero-3d-product-img">
+
+                <!-- Points d'Intérêt Techniques 3D (Hotspots) -->
+                <div class="holo-hotspot hotspot-1" id="hotspot-1">
+                  <span class="hotspot-ping"></span>
+                  <span class="hotspot-text">Laiton Pur CW617N • Garantie 5 Ans</span>
+                </div>
+                <div class="holo-hotspot hotspot-2" id="hotspot-2">
+                  <span class="hotspot-ping ping-flame"></span>
+                  <span class="hotspot-text">Haute Pression 10-40 Bars • Norme ACS</span>
+                </div>
+                <div class="holo-hotspot hotspot-3" id="hotspot-3">
+                  <span class="hotspot-ping ping-gold"></span>
+                  <span class="hotspot-text">Stock Dépôt 4ème Périphérique Oran</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contrôles de Rotation 3D & Sélection Rapide -->
+            <div class="holo-controls-bar">
+              <div class="rotation-slider-wrap">
+                <label for="hero-rot-slider">Angle 3D :</label>
+                <input type="range" id="hero-rot-slider" min="-45" max="45" value="0" class="rot-range-slider">
+              </div>
+              <div class="holo-quick-actions">
+                <button class="btn-holo-action" id="btn-hero-auto-spin" title="Activer/Pause Rotation 3D">
+                  🔄 360° Auto
+                </button>
+                <button class="btn-holo-action btn-holo-inspect" id="btn-hero-open-sim">
+                  💧 Simuler le Jet d'Eau
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 2 : GALERIE D'AFFICHES PUBLICITAIRES 3D HAUT DE GAMME
+         ("Même les affiches qu'elles soient modernes, possibilité 3D")
+         ==================================================================== -->
+    <section class="posters-3d-section" id="affiches-3d">
+      <div class="section-header-block">
+        <div class="section-eyebrow">
+          <span class="flame-badge-icon">🔥</span>
+          <span>CAMPAGNES OFFICIELLES &amp; AFFICHES HOLOGRAPHIQUES 3D CRG</span>
+        </div>
+        <div class="section-title-flex">
+          <div>
+            <h2 class="section-title">Affiches Pro <span class="text-flame-gradient">Nouvelle Génération 3D</span></h2>
+            <p class="section-subtitle">
+              Passez votre souris ou touchez chaque affiche pour ressentir la profondeur 3D. Cliquez sur une affiche pour l'inspecter en plein écran, l'imprimer ou activer l'offre commerciale sur WhatsApp.
+            </p>
+          </div>
+          <div class="poster-controls-hint">
+            <span class="hint-3d-pill">✨ Effet Parallaxe 3D Actif</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="posters-3d-grid">
+
+        <!-- AFFICHE 3D N°1 : L'ALLIANCE DE L'EAU & DE LA FLAMME -->
+        <article class="poster-3d-card poster-theme-dual" data-tilt-card>
+          <div class="poster-glare"></div>
+          <div class="poster-bg-pattern"></div>
+          
+          <div class="poster-layer-top">
+            <img src="assets/crg_flame_emblem.svg" alt="CRG Flamme" class="poster-mini-logo">
+            <span class="poster-tag tag-flame">OFFRE PHARE 2026 • ORAN</span>
+          </div>
+
+          <div class="poster-visual-stage">
+            <div class="poster-aura aura-dual"></div>
+            <img src="assets/products/chaudiere_gaz.png" alt="Chaudière Gaz & Chauffage" class="poster-img-secondary">
+            <img src="assets/3d_faucet_cascade.svg" alt="Mitigeur Miro Italie" class="poster-img-primary">
+            <div class="poster-floating-badge">
+              <strong>EAU &amp; FLAMME</strong>
+              <span>Garantie Officielle 5 Ans</span>
+            </div>
+          </div>
+
+          <div class="poster-content-layer">
+            <div class="poster-kicker">ROBINETTERIE LUXE &amp; CHAUFFAGE CENTRAL</div>
+            <h3 class="poster-headline">L'Énergie de la Flamme,<br>La Pureté de l'Eau</h3>
+            <p class="poster-desc">
+              Équipez vos projets résidentiels, promotions immobilières et villas avec la robinetterie italienne <strong>Miro Europe</strong> et nos systèmes de chauffage central haute performance (Chaudières, Radiateurs Alu &amp; Vases d'expansion).
+            </p>
+            <div class="poster-footer-actions">
+              <button class="btn-poster-view" onclick="openPosterModal(0)">
+                <span>🔍 Affiche 3D Plein Écran</span>
+              </button>
+              <a href="https://wa.me/213560252632?text=Bonjour%20CRG%20Oran,%20je%20souhaite%20profiter%20de%20l'offre%20Affiche%20Eau%20%26%20Flamme%20(Robinetterie%20Miro%20%2B%20Chauffage%20Central)." target="_blank" class="btn-poster-wa">
+                <span>Activer l'Offre</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- AFFICHE 3D N°2 : PACK ENTREPRISES BTPH & POMPAGE WILO -->
+        <article class="poster-3d-card poster-theme-aqua" data-tilt-card>
+          <div class="poster-glare"></div>
+          <div class="poster-bg-pattern"></div>
+
+          <div class="poster-layer-top">
+            <img src="assets/crg_flame_emblem.svg" alt="CRG Flamme" class="poster-mini-logo">
+            <span class="poster-tag tag-aqua">SPÉCIAL ENTREPRISES &amp; CHANTIERS</span>
+          </div>
+
+          <div class="poster-visual-stage">
+            <div class="poster-aura aura-aqua"></div>
+            <img src="assets/products/raccords_multicouche.jpg" alt="Multicouche General Fittings" class="poster-img-secondary">
+            <img src="assets/3d_wilo_pump.svg" alt="Pompe Wilo Allemagne" class="poster-img-primary">
+            <div class="poster-floating-badge badge-aqua">
+              <strong>TARIF GROS USINE</strong>
+              <span>Wilo • General Fittings • PN40</span>
+            </div>
+          </div>
+
+          <div class="poster-content-layer">
+            <div class="poster-kicker">INGÉNIERIE HYDRAULIQUE &amp; RÉSEAUX B2B</div>
+            <h3 class="poster-headline">Puissance Allemande Wilo &amp;<br>Multicouche Italien Certifié</h3>
+            <p class="poster-desc">
+              Approvisionnement complet de chantiers : Circulateurs &amp; Pompes <strong>Wilo</strong>, Tubes et raccords à sertir <strong>General Fittings</strong>, Cuivre <strong>Halcor</strong> et Vannes lourdes <strong>PN40</strong>. Remises quantitatives immédiates au dépôt.
+            </p>
+            <div class="poster-footer-actions">
+              <button class="btn-poster-view" onclick="openPosterModal(1)">
+                <span>🔍 Affiche 3D Plein Écran</span>
+              </button>
+              <a href="https://wa.me/213560252632?text=Bonjour%20CRG%20Oran,%20nous%20sommes%20une%20entreprise/chantier%20et%20souhaitons%20un%20devis%20Pack%20B2B%20(Wilo%20/%20General%20Fittings%20/%20Vannes%20PN40)." target="_blank" class="btn-poster-wa">
+                <span>Devis Chantier</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- AFFICHE 3D N°3 : COLLECTION PRESTIGE OR ROYAL PVD & NOIR MAT -->
+        <article class="poster-3d-card poster-theme-gold" data-tilt-card>
+          <div class="poster-glare"></div>
+          <div class="poster-bg-pattern"></div>
+
+          <div class="poster-layer-top">
+            <img src="assets/crg_flame_emblem.svg" alt="CRG Flamme" class="poster-mini-logo">
+            <span class="poster-tag tag-gold">ÉDITION ARCHITECTE &amp; HÔTELS</span>
+          </div>
+
+          <div class="poster-visual-stage">
+            <div class="poster-aura aura-gold"></div>
+            <img src="assets/3d_faucet_gold.svg" alt="Mitigeur Or Brossé Royal PVD" class="poster-img-secondary">
+            <img src="assets/3d_shower_black.svg" alt="Colonne Douche Thermostatique" class="poster-img-primary">
+            <div class="poster-floating-badge badge-gold">
+              <strong>FINITION PVD LUXE</strong>
+              <span>Anti-Calcaire &amp; Inaltérable</span>
+            </div>
+          </div>
+
+          <div class="poster-content-layer">
+            <div class="poster-kicker">DESIGN SANITAIRE HAUTE COUTURE</div>
+            <h3 class="poster-headline">Collection Or Brossé Royal<br>&amp; Noir Mat Thermostatique</h3>
+            <p class="poster-desc">
+              Transformez les salles de bain d'exception : Colonnes de douche thermostatiques sécurité 38°C, mitigeurs effet cascade et caniveaux de douche à l'italienne en <strong>Inox 304 Alba</strong>.
+            </p>
+            <div class="poster-footer-actions">
+              <button class="btn-poster-view" onclick="openPosterModal(2)">
+                <span>🔍 Affiche 3D Plein Écran</span>
+              </button>
+              <a href="https://wa.me/213560252632?text=Bonjour%20CRG%20Oran,%20je%20souhaite%20découvrir%20la%20Collection%20Architecte%20Or%20Brossé%20PVD%20et%20Noir%20Mat." target="_blank" class="btn-poster-wa">
+                <span>Commander Pack</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3 : CATALOGUE 3D INTERACTIF & SIMULATEUR HYDRAULIQUE
+         ==================================================================== -->
+    <section class="catalog-section" id="catalogue-section">
+      <div class="section-header-block">
+        <div class="section-eyebrow">
+          <span class="aqua-badge-icon">💧</span>
+          <span>STOCK RÉEL DISPONIBLE AU DÉPÔT DU 4ÈME PÉRIPHÉRIQUE ES-SÉNIA</span>
+        </div>
+        <div class="section-title-flex">
+          <div>
+            <h2 class="section-title">Catalogue Interactif <span class="text-aqua-gradient">3D &amp; Devis Express</span></h2>
+            <p class="section-subtitle" id="catalog-audience-banner">
+              Affichage actif : <strong>Tarifs Gros HT Entreprises &amp; Chantiers</strong> — Ajoutez vos références au Devis Pro ou testez chaque produit dans le Simulateur 3D.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filtres Avancés : Rayons Techniques & Finitions -->
+      <div class="filters-section">
+        <div class="filter-row">
+          <div class="filter-title">RAYON TECHNIQUE :</div>
+          <div class="pill-group" id="category-filter-group">
+            <button class="pill-btn active" data-cat="all">Tous les Rayons (14)</button>
+            <button class="pill-btn" data-cat="bathroom">💧 Robinetterie &amp; Bain</button>
+            <button class="pill-btn" data-cat="shower">🚿 Douche &amp; Caniveaux Alba</button>
+            <button class="pill-btn" data-cat="heating">🔥 Chauffage Central &amp; Gaz</button>
+            <button class="pill-btn" data-cat="pumps">⚡ Pompage &amp; Surpression Wilo</button>
+            <button class="pill-btn" data-cat="piping">🔧 Multicouche &amp; Cuivre</button>
+            <button class="pill-btn" data-cat="industrial">🛡️ Vannerie Lourde PN40</button>
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-title">FINITION &amp; ALLIAGE :</div>
+          <div class="pill-group" id="finish-filter-group">
+            <button class="finish-pill active" data-finish="all">Toutes Finitions</button>
+            <button class="finish-pill" data-finish="chrome">
+              <span class="color-swatch swatch-chrome"></span> Chromé Miroir
+            </button>
+            <button class="finish-pill" data-finish="black">
+              <span class="color-swatch swatch-black"></span> Noir Mat PVD
+            </button>
+            <button class="finish-pill" data-finish="gold">
+              <span class="color-swatch swatch-gold"></span> Or Brossé Royal
+            </button>
+            <button class="finish-pill" data-finish="brass">
+              <span class="color-swatch swatch-brass"></span> Laiton Matricé PN40
+            </button>
+            <button class="finish-pill" data-finish="thermal">
+              <span class="color-swatch swatch-thermal"></span> Thermique / Époxy
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barre d'Outils Catalogue : Compteur, Vue 3D & Tri -->
+      <div class="results-header">
+        <div class="results-count" id="results-count">14 références en stock au dépôt d'Oran</div>
+        <div class="results-controls-right">
+          <div class="view-mode-toggle">
+            <button class="view-btn active" id="btn-view-3d" title="Cartes avec relief 3D">🧊 Cartes 3D</button>
+            <button class="view-btn" id="btn-view-compact" title="Vue Liste Pro Rapide">📋 Liste Pro</button>
+          </div>
+          <div class="sort-selector">
+            <label for="sort-by">Trier par :</label>
+            <select id="sort-by" class="sort-select">
+              <option value="featured">Sélection Vedette CRG</option>
+              <option value="price-asc">Prix : Croissant</option>
+              <option value="price-desc">Prix : Décroissant</option>
+              <option value="rating">Indice Technique &amp; Garantie</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grille des Produits 3D -->
+      <div class="products-grid" id="faucets-grid">
+        <!-- Rendu dynamique par app.js -->
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 4 : ESPACE ENTREPRISES B2B & PARTENAIRES OFFICIELS
+         ==================================================================== -->
+    <section class="b2b-enterprise-section" id="entreprise-b2b">
+      <div class="b2b-card-container">
+        <div class="b2b-left-content">
+          <span class="b2b-badge">🏢 SOLUTIONS GRANDS COMPTES, PROMOTEURS &amp; ARTISANS</span>
+          <h2 class="b2b-title">Pourquoi les Entreprises et Particuliers d'Oran choisissent <span class="text-gold-gradient">SARL CRG</span> ?</h2>
+          <p class="b2b-lead">
+            Situé stratégiquement sur le <strong>4ème Périphérique d'Es-Sénia (Îlot N°08)</strong>, notre dépôt central assure une disponibilité immédiate pour les chantiers de logements, hôtels, hôpitaux, usines et villas de luxe dans toute l'Algérie.
+          </p>
+
+          <div class="b2b-pillars-grid">
+            <div class="b2b-pillar">
+              <div class="pillar-icon icon-aqua">💧</div>
+              <div>
+                <h4>Importateur &amp; Distributeur Direct</h4>
+                <p>Zéro intermédiaire : tarifs de gros imbattables sur Miro Europe, Wilo, General Fittings, Halcor et Alba.</p>
+              </div>
+            </div>
+            <div class="b2b-pillar">
+              <div class="pillar-icon icon-flame">🔥</div>
+              <div>
+                <h4>Expertise Double : Eau &amp; Flamme</h4>
+                <p>De l'adduction d'eau haute pression PN40 jusqu'au chauffage central complet et pompage électronique.</p>
+              </div>
+            </div>
+            <div class="b2b-pillar">
+              <div class="pillar-icon icon-gold">🚛</div>
+              <div>
+                <h4>Logistique &amp; Chargement Rapide</h4>
+                <p>Accès poids-lourds direct sur la rocade sud (4ème Périphérique), préparation de commandes par palettes.</p>
+              </div>
+            </div>
+            <div class="b2b-pillar">
+              <div class="pillar-icon icon-aqua">🛡️</div>
+              <div>
+                <h4>Certificats de Conformité Chantier</h4>
+                <p>Dossiers techniques complets (ACS, CSTB, ISO 9001, fiches d'essais) fournis pour vos réceptions de chantiers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marques Partenaires Officielles -->
+        <div class="b2b-brands-showcase">
+          <h3 class="brands-Heading">Nos Marques Officielles en Stock</h3>
+          <div class="brands-grid-logos">
+            <div class="brand-logo-tile" onclick="filterByBrandKeyword('Miro')">
+              <img src="assets/miro.png" alt="Miro Europe Italie" onerror="this.style.display='none'">
+              <strong>MIRO EUROPE</strong>
+              <span>Robinetterie Luxe • Italie</span>
+            </div>
+            <div class="brand-logo-tile" onclick="filterByBrandKeyword('Wilo')">
+              <img src="assets/products/wilo_circulateur.png" alt="Wilo Allemagne" onerror="this.style.display='none'">
+              <strong>WILO PUMPEN</strong>
+              <span>Pompage &amp; Circulateurs • Allemagne</span>
+            </div>
+            <div class="brand-logo-tile" onclick="filterByBrandKeyword('General Fittings')">
+              <img src="assets/general_fittings.png" alt="General Fittings Italie" onerror="this.style.display='none'">
+              <strong>GENERAL FITTINGS</strong>
+              <span>Multicouche &amp; Raccords • Italie</span>
+            </div>
+            <div class="brand-logo-tile" onclick="filterByBrandKeyword('Alba')">
+              <img src="assets/alba.png" alt="Alba Sanitaire" onerror="this.style.display='none'">
+              <strong>ALBA SANITAIRE</strong>
+              <span>Inox 304 &amp; Caniveaux Pro</span>
+            </div>
+            <div class="brand-logo-tile" onclick="filterByBrandKeyword('Chaudière')">
+              <img src="assets/halcor.png" alt="Halcor Tubes Cuivre" onerror="this.style.display='none'">
+              <strong>HALCOR &amp; THERMOPRO</strong>
+              <span>Tubes Cuivre &amp; Chauffage Central</span>
+            </div>
+            <div class="brand-logo-tile" onclick="filterByBrandKeyword('CRG')">
+              <img src="assets/crg_flame_emblem.svg" alt="CRG Industriel">
+              <strong>CRG INDUSTRIEL</strong>
+              <span>Vannerie Lourde PN40 &amp; Manomètres</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Filtres Avancés : Rayons & Marques Partenaires -->
-    <section class="filters-section">
-      <div class="filter-row">
-        <div class="filter-title">RAYON TECHNIQUE :</div>
-        <div class="pill-group" id="category-filter-group">
-          <button class="pill-btn active" data-cat="all">Tous les Produits</button>
-          <button class="pill-btn" data-cat="bathroom">Robinetterie Salle de Bain</button>
-          <button class="pill-btn" data-cat="kitchen">Mitigeurs Cuisine Pro</button>
-          <button class="pill-btn" data-cat="shower">Colonnes & Ciel de Douche</button>
-          <button class="pill-btn" data-cat="pumps">Pompage & Chauffage Wilo</button>
-          <button class="pill-btn" data-cat="piping">Tubes Cuivre & Multicouche</button>
-          <button class="pill-btn" data-cat="industrial">Vannerie & Robinetterie Industrielle</button>
+    <!-- ====================================================================
+         SECTION 5 : HUB DE CONTACT ULTRA-FACILE & GÉOLOCALISATION DÉPÔT
+         ("Qu'il soit facile à utiliser, à contacter l'entreprise")
+         ==================================================================== -->
+    <section class="contact-hub-section" id="contact-hub">
+      <div class="section-header-block">
+        <div class="section-eyebrow">
+          <span class="aqua-badge-icon">📞</span>
+          <span>CONTACT DIRECT &amp; DEVIS SUR-MESURE EN 1 CLIC</span>
         </div>
+        <h2 class="section-title">Contactez <span class="text-aqua-gradient">SARL CRG Oran</span> Immédiatement</h2>
+        <p class="section-subtitle">
+          Choisissez votre canal préféré : appel direct, WhatsApp pré-rempli selon votre besoin, ou venez directement à notre dépôt du 4ème Périphérique Es-Sénia.
+        </p>
       </div>
 
-      <div class="filter-row">
-        <div class="filter-title">FINITION & MATÉRIAU :</div>
-        <div class="pill-group" id="finish-filter-group">
-          <button class="finish-pill active" data-finish="all">Toutes</button>
-          <button class="finish-pill" data-finish="chrome">
-            <span class="color-swatch swatch-chrome"></span> Chromé Miroir
-          </button>
-          <button class="finish-pill" data-finish="black">
-            <span class="color-swatch swatch-black"></span> Noir Mat
-          </button>
-          <button class="finish-pill" data-finish="gold">
-            <span class="color-swatch swatch-gold"></span> Or Brossé
-          </button>
-          <button class="finish-pill" data-finish="brass">
-            <span class="color-swatch swatch-brass"></span> Laiton Brut PN40
-          </button>
-          <button class="finish-pill" data-finish="copper">
-            <span class="color-swatch swatch-copper"></span> Cuivre Pur 99.9%
-          </button>
+      <div class="contact-hub-grid">
+
+        <!-- Colonne 1 : Cartes d'Appel & WhatsApp 1-Clic -->
+        <div class="contact-channels-col">
+          <div class="channel-card channel-whatsapp">
+            <div class="channel-icon">💬</div>
+            <div class="channel-info">
+              <span class="channel-tag">RÉPONSE EN MOINS DE 15 MINUTES</span>
+              <h3>Service Commercial &amp; Devis WhatsApp</h3>
+              <p>Envoyez votre liste de matériaux, photo de cahier des charges ou demande de prix gros.</p>
+              <div class="channel-number">0560 25 26 32</div>
+              <div class="channel-btns">
+                <a href="https://wa.me/213560252632?text=Bonjour%20SARL%20CRG%20Oran,%20je%20souhaite%20un%20devis%20commercial." target="_blank" class="btn-channel-primary">
+                  Ouvrir WhatsApp Direct
+                </a>
+                <a href="tel:+213560252632" class="btn-channel-secondary">
+                  📞 Appeler
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="channel-card channel-chantier">
+            <div class="channel-icon">🏗️</div>
+            <div class="channel-info">
+              <span class="channel-tag tag-flame">SUPPORT CHANTIERS &amp; COMMANDES GROS</span>
+              <h3>Ligne Dédiée Entreprises &amp; Installateurs</h3>
+              <p>Suivi des livraisons, disponibilité palettes, fiches techniques et assistance ingénierie.</p>
+              <div class="channel-number">0560 12 02 69</div>
+              <div class="channel-btns">
+                <a href="tel:+213560120269" class="btn-channel-primary btn-flame">
+                  📞 Appeler Support Chantier
+                </a>
+                <a href="https://wa.me/213560120269?text=Bonjour%20Support%20Chantier%20CRG%20Oran,%20j'ai%20une%20demande%20technique/commande." target="_blank" class="btn-channel-secondary">
+                  WhatsApp Tech
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="channel-card channel-depot">
+            <div class="channel-icon">📍</div>
+            <div class="channel-info">
+              <span class="channel-tag tag-gold">SIÈGE SOCIAL &amp; SHOWROOM ORAN</span>
+              <h3>Dépôt Central 4ème Périphérique Es-Sénia</h3>
+              <p><strong>Adresse :</strong> Îlot N°08, Zone Industrielle, 4ème Périphérique (Rocade Sud), Es-Sénia, Oran.<br>
+              <strong>Fixe :</strong> 041 51 51 56 • <strong>Email :</strong> contact@crg-oran.com<br>
+              <strong>Horaires :</strong> Samedi au Jeudi : 08h00 – 17h00</p>
+              <div class="channel-btns">
+                <a href="https://maps.google.com/?q=CRG+Comptoir+de+Robinetterie+Générale+Es+Senia+Oran" target="_blank" class="btn-channel-primary btn-gold">
+                  🗺️ Lancer l'Itinéraire GPS Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Colonne 2 : Assistant de Contact Express (Génère la demande parfaite en 10 secondes) -->
+        <div class="quick-request-card">
+          <div class="quick-request-header">
+            <img src="assets/crg_flame_emblem.svg" alt="CRG" class="qr-logo">
+            <div>
+              <h3>Assistant Devis &amp; Contact Express</h3>
+              <p>Remplissez en 10 secondes — envoi direct au responsable concerné</p>
+            </div>
+          </div>
+
+          <form id="express-contact-form" class="express-form" onsubmit="handleExpressContact(event)">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="req-name">Votre Nom ou Raison Sociale *</label>
+                <input type="text" id="req-name" required placeholder="Ex: Entreprise BTPH / M. Benali">
+              </div>
+              <div class="form-group">
+                <label for="req-phone">Téléphone *</label>
+                <input type="tel" id="req-phone" required placeholder="Ex: 0550 00 00 00">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label for="req-profile">Vous êtes :</label>
+                <select id="req-profile">
+                  <option value="Entreprise BTPH / Promoteur Immobilier">🏢 Entreprise BTPH / Promoteur</option>
+                  <option value="Installateur Pro / Ingénieur Plomberie-Chauffage">🔧 Plombier / Installateur / Bureau d'Études</option>
+                  <option value="Revendeur / Quincaillerie">🏪 Revendeur / Magasin Sanitaire</option>
+                  <option value="Particulier (Villa / Appartement)">🏠 Particulier (Villa / Projet Résidentiel)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="req-subject">Objet de la demande :</label>
+                <select id="req-subject">
+                  <option value="Demande de Devis Quantitatif (Tarif Gros)">📋 Devis Quantitatif / Tarif Gros</option>
+                  <option value="Achat Robinetterie Luxe & Salle de Bain">💧 Robinetterie Miro &amp; Salle de Bain</option>
+                  <option value="Équipement Chauffage Central & Chaudières">🔥 Chauffage Central, Chaudières &amp; Radiateurs</option>
+                  <option value="Pompes Wilo & Surpression Immeuble">⚡ Pompage Wilo &amp; Surpression</option>
+                  <option value="Rendez-vous au Showroom / Dépôt 4ème Périphérique">📍 Visite Showroom / Retrait Dépôt Oran</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="req-message">Détails ou articles souhaités (optionnel) :</label>
+              <textarea id="req-message" rows="3" placeholder="Indiquez vos articles, quantités approximatives ou questions techniques..."></textarea>
+            </div>
+
+            <div class="form-submit-group">
+              <button type="submit" class="btn-submit-wa">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.181-.076.355.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
+                </svg>
+                <span>Envoyer en 1 Clic sur WhatsApp Commercial</span>
+              </button>
+              <button type="button" class="btn-submit-mail" onclick="sendExpressEmail()">
+                ✉️ Envoyer par Email
+              </button>
+            </div>
+          </form>
+        </div>
+
       </div>
     </section>
 
-    <!-- Compteur et Résultats -->
-    <div class="results-header">
-      <div class="results-count" id="results-count">12 articles en stock au dépôt</div>
-      <div class="sort-selector">
-        <label for="sort-by">Trier par :</label>
-        <select id="sort-by" class="sort-select">
-          <option value="featured">Sélection Vedette CRG</option>
-          <option value="price-asc">Prix Gros : Croissant</option>
-          <option value="price-desc">Prix Gros : Décroissant</option>
-          <option value="rating">Garantie & Normes ACS</option>
-        </select>
-      </div>
-    </div>
-
-    <!-- Grille des Produits -->
-    <div class="products-grid" id="faucets-grid">
-      <!-- Rendu dynamique par app.js -->
-    </div>
   </main>
 
   <!-- ======================================================================
-       MODALE MODERNE : FENÊTRE D'INSPECTION & SIMULATION DU JET D'EAU CRG
+       MODALE 1 : FENÊTRE D'INSPECTION 3D & SIMULATEUR HYDRO-THERMIQUE CRG
        ====================================================================== -->
-  <div class="water-modal-backdrop" id="water-modal-backdrop">
-    <div class="water-modal-window" id="water-modal-window">
+  <div class="water-modal-backdrop" id="water-modal-backdrop" aria-hidden="true">
+    <div class="water-modal-window" id="water-modal-window" role="dialog" aria-modal="true">
       <button class="modal-close-icon" id="btn-close-modal" title="Fermer la fenêtre">&times;</button>
       
       <div class="modal-grid">
-        <!-- Zone Visuelle & Simulateur de Jet d'Eau Interactif -->
+        <!-- Zone Visuelle 3D & Simulateur de Jet d'Eau / Flux Thermique -->
         <div class="modal-visual-zone">
           <div class="simulator-card">
             <div class="simulator-header">
-              <span class="pulse-indicator"></span>
-              <span>SIMULATEUR DE DÉBIT HYDRAULIQUE CRG</span>
+              <div class="sim-title-left">
+                <span class="pulse-indicator"></span>
+                <span>LABORATOIRE D'ESSAI 3D &amp; DÉBIT CRG</span>
+              </div>
+              <span class="sim-3d-hint">Glissez ou utilisez le curseur 3D</span>
             </div>
 
-            <!-- Faucet Canvas & Visualisation -->
+            <!-- Scène 3D Produit & Jet d'Eau -->
             <div class="faucet-stage" id="faucet-stage">
-              <img src="" alt="Robinet sélectionné" id="modal-faucet-img" class="stage-faucet-img">
+              <div class="stage-3d-wrapper" id="modal-stage-3d-wrapper">
+                <img src="" alt="Produit sélectionné" id="modal-faucet-img" class="stage-faucet-img">
+              </div>
               
-              <!-- Flux d'Eau Animé (Activé par Bouton) -->
+              <!-- Flux d'Eau / Énergie Animé -->
               <div class="water-jet-stream" id="water-jet-stream">
                 <div class="water-drop-spray"></div>
                 <div class="water-drop-spray spray-2"></div>
@@ -200,61 +755,67 @@
               </div>
             </div>
 
-            <!-- Contrôle Interactif On/Off de l'Eau -->
+            <!-- Contrôles 3D (Rotation + Température Eau Froide / Flamme Chaude + Ouverture) -->
             <div class="simulator-controls">
+              <div class="sim-sliders-row">
+                <div class="sim-slider-box">
+                  <label for="modal-rot-range">🔄 Rotation 3D (<span id="modal-rot-val">0°</span>)</label>
+                  <input type="range" id="modal-rot-range" min="-180" max="180" value="0" class="sim-range">
+                </div>
+                <div class="sim-slider-box">
+                  <label for="modal-temp-range">🌡️ Température (<span id="modal-temp-val">18°C • Eau Pure</span>)</label>
+                  <input type="range" id="modal-temp-range" min="10" max="65" value="18" class="sim-range temp-range">
+                </div>
+              </div>
+
               <button class="btn btn-water-flow" id="btn-toggle-water">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                   <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
                 </svg>
-                <span id="water-btn-text">Tester le Robinet (Ouvrir l'Eau)</span>
+                <span id="water-btn-text">Ouvrir la Vanne &amp; Tester le Débit</span>
               </button>
               <div class="flow-rate-readout" id="flow-readout">Débit : 0.0 L/min (Vanne Fermée)</div>
             </div>
           </div>
         </div>
 
-        <!-- Zone Détails & Devis Gros Direct CRG -->
+        <!-- Zone Détails Techniques & Commande -->
         <div class="modal-details-zone">
           <div class="modal-badges-row">
-            <span class="crg-badge" id="modal-crg-badge">Stock Immédiat Dépôt Oran</span>
-            <span class="watersense-badge" id="modal-watersense-badge">💧 Garantie 5 Ans • Norme ACS</span>
+            <span class="crg-badge" id="modal-crg-badge">✓ Stock Immédiat Dépôt Oran</span>
+            <span class="watersense-badge" id="modal-watersense-badge">💧 Garantie Officielle • Certifié ACS</span>
           </div>
 
           <h2 class="modal-product-title" id="modal-title">Titre du Produit CRG</h2>
           
           <div class="modal-meta-row">
-            <div class="modal-rating" id="modal-rating">★★★★★ Conforme Normes Européennes</div>
+            <div class="modal-rating" id="modal-rating">★★★★★ Qualité Professionnelle</div>
             <div class="modal-brand-tag" id="modal-brand">Miro Europe (Italie)</div>
           </div>
 
           <div class="modal-price-box">
-            <div class="modal-current-price" id="modal-price">18,500 DZD</div>
-            <div class="modal-old-price" id="modal-old-price">Tarif Public : 22,000 DZD</div>
+            <div>
+              <div class="modal-current-price" id="modal-price">18,500 DZD</div>
+              <div class="modal-old-price" id="modal-old-price">Tarif Public : 22,000 DZD</div>
+            </div>
             <div class="modal-save-tag" id="modal-save">Prix Gros Chantier HT</div>
           </div>
 
           <p class="modal-description" id="modal-desc">
-            Description technique détaillée, cartouche céramique haute longévité testée à 500 000 cycles, finition anti-corrosion brouillard salin.
+            Description technique détaillée.
           </p>
 
           <div class="modal-specs-list" id="modal-specs">
-            <!-- Rendu des spécifications techniques -->
+            <!-- Spécifications injectées par app.js -->
           </div>
 
-          <!-- Boutons d'Action Commerciale CRG -->
+          <!-- Boutons d'Action Commerciale : Ajouter au Devis + WhatsApp + Appel -->
           <div class="modal-cta-group">
+            <button class="btn btn-add-quote-modal" id="btn-modal-add-quote">
+              <span>➕ Ajouter à Mon Devis Pro</span>
+            </button>
             <a href="#" target="_blank" class="btn btn-whatsapp-quote" id="modal-whatsapp-link">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.181-.076.355.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.174.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
-              </svg>
-              <span>Demander Devis WhatsApp (0560 25 26 32)</span>
-            </a>
-            
-            <a href="tel:+213560252632" class="btn btn-call-crg" id="btn-call-crg">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-              <span>Appeler le Dépôt</span>
+              <span>💬 Devis WhatsApp Direct</span>
             </a>
           </div>
         </div>
@@ -262,37 +823,118 @@
     </div>
   </div>
 
-  <!-- Pied de page CRG Oran -->
+  <!-- ======================================================================
+       MODALE 2 : VISIONNEUSE D'AFFICHE PUBLICITAIRE 3D PLEIN ÉCRAN
+       ====================================================================== -->
+  <div class="poster-modal-backdrop" id="poster-modal-backdrop" aria-hidden="true">
+    <div class="poster-modal-window" id="poster-modal-window">
+      <button class="modal-close-icon" onclick="closePosterModal()">&times;</button>
+      <div id="poster-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       TIROIR LATÉRAL : PANIER DEVIS EXPRESS PRO (B2B & PARTICULIERS)
+       ====================================================================== -->
+  <div class="quote-drawer-backdrop" id="quote-drawer-backdrop">
+    <aside class="quote-drawer" id="quote-drawer" aria-label="Panier Devis Pro">
+      <div class="drawer-header">
+        <div class="drawer-title-wrap">
+          <img src="assets/crg_flame_emblem.svg" alt="CRG" class="drawer-logo">
+          <div>
+            <h3>Mon Devis Pro CRG Oran</h3>
+            <span>Bon de consultation &amp; tarif gros chantier</span>
+          </div>
+        </div>
+        <button class="drawer-close-btn" id="btn-close-drawer">&times;</button>
+      </div>
+
+      <div class="drawer-body" id="drawer-items-container">
+        <!-- Articles du devis injectés par app.js -->
+      </div>
+
+      <div class="drawer-footer">
+        <div class="drawer-total-row">
+          <span>Total Estimatif HT :</span>
+          <strong id="drawer-total-amount">0 DZD</strong>
+        </div>
+        <div class="drawer-client-inputs">
+          <input type="text" id="drawer-client-name" placeholder="Votre Nom ou Entreprise (optionnel)">
+          <input type="tel" id="drawer-client-phone" placeholder="Votre Téléphone (optionnel)">
+        </div>
+        <div class="drawer-actions">
+          <button class="btn-drawer-wa" id="btn-send-drawer-wa">
+            💬 Envoyer ce Devis sur WhatsApp (0560 25 26 32)
+          </button>
+          <div class="drawer-secondary-btns">
+            <button class="btn-drawer-print" id="btn-print-quote">
+              🖨️ Imprimer Devis Proforma PDF
+            </button>
+            <button class="btn-drawer-clear" id="btn-clear-quote">
+              Vider
+            </button>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ======================================================================
+       DOCK FLOTTANT PERMANENT D'ACCÈS RAPIDE (Mobile & Desktop)
+       ====================================================================== -->
+  <div class="floating-quick-dock">
+    <a href="tel:+213560252632" class="dock-item dock-call" title="Appeler le Commercial CRG">
+      <span class="dock-icon">📞</span>
+      <span class="dock-label">0560 25 26 32</span>
+    </a>
+    <a href="https://wa.me/213560252632?text=Bonjour%20CRG%20Oran,%20je%20visite%20votre%20site%203D%20et%20je%20souhaite%20un%20renseignement." target="_blank" class="dock-item dock-wa" title="Discussion WhatsApp Immédiate">
+      <span class="dock-icon">💬</span>
+      <span class="dock-label">WhatsApp Pro</span>
+    </a>
+    <button class="dock-item dock-quote" onclick="toggleQuoteDrawer(true)" title="Ouvrir Mon Devis Pro">
+      <span class="dock-icon">📋</span>
+      <span class="dock-label">Devis (<span id="dock-quote-count">0</span>)</span>
+    </button>
+    <a href="https://maps.google.com/?q=CRG+Comptoir+de+Robinetterie+Générale+Es+Senia+Oran" target="_blank" class="dock-item dock-gps" title="Itinéraire Google Maps Dépôt">
+      <span class="dock-icon">📍</span>
+      <span class="dock-label">GPS Dépôt</span>
+    </a>
+  </div>
+
+  <!-- ======================================================================
+       PIED DE PAGE HAUT DE GAMME CRG ORAN
+       ====================================================================== -->
   <footer class="app-footer">
     <div class="footer-inner">
       <div class="footer-col brand-col">
-        <img src="assets/crg_modern_logo.svg" alt="CRG Oran" class="footer-logo">
+        <img src="assets/crg_modern_logo.svg" alt="SARL CRG Oran" class="footer-logo">
         <p class="footer-tagline">
-          Comptoir de Robinetterie Générale • Leader régional de la distribution d'équipements de plomberie, robinetterie sanitaire et industrielle à Oran.
+          <strong>SARL CRG — Comptoir de Robinetterie Générale</strong>.<br>
+          Leader régional de la distribution d'équipements de robinetterie sanitaire, chauffage central, pompage Wilo et vannerie industrielle à Oran.
         </p>
       </div>
       <div class="footer-col">
-        <h4>Dépôt & Logistique</h4>
-        <p>Îlot N°08, Zone Industrielle</p>
+        <h4>Dépôt &amp; Showroom Géant</h4>
+        <p>📍 Îlot N°08, Zone Industrielle</p>
         <p>4ème Périphérique (Rocade Sud), Es-Sénia, Oran</p>
-        <p>Ouvert du Samedi au Jeudi : 08h00 - 17h00</p>
+        <p>🕒 Samedi au Jeudi : 08h00 – 17h00</p>
       </div>
       <div class="footer-col">
-        <h4>Contacts Commerciaux</h4>
-        <p>Tél. Commercial : <a href="tel:+213560252632">0560 25 26 32</a></p>
-        <p>Support Chantier : <a href="tel:+213560120269">0560 12 02 69</a></p>
-        <p>Fixe Entreprise : 041 51 51 56</p>
-        <p>Email : contact@crg-oran.com</p>
+        <h4>Lignes Directes</h4>
+        <p>Commercial Gros : <a href="tel:+213560252632">0560 25 26 32</a></p>
+        <p>Support Chantiers : <a href="tel:+213560120269">0560 12 02 69</a></p>
+        <p>Standard Fixe : <a href="tel:+213560252632">041 51 51 56</a></p>
+        <p>Email : <a href="mailto:contact@crg-oran.com">contact@crg-oran.com</a></p>
       </div>
       <div class="footer-col">
-        <h4>Marques Partenaires</h4>
+        <h4>Divisions &amp; Marques</h4>
         <div class="footer-partners-mini">
-          <span>WILO</span> • <span>MIRO EUROPE</span> • <span>GENERAL FITTINGS</span> • <span>HALCOR</span> • <span>ALBA</span> • <span>NOFER</span>
+          <span>💧 AQUAPRO</span> • <span>🔥 THERMOPRO</span> • <span>WILO</span> • <span>MIRO EUROPE</span> • <span>GENERAL FITTINGS</span> • <span>HALCOR</span> • <span>ALBA</span>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© 2026 SARL CRG Oran — Tous droits réservés. Plateforme conçue avec 00KORTI.</div>
+      <div>© 2026 SARL CRG Oran — Comptoir de Robinetterie Générale. Tous droits réservés.</div>
     </div>
   </footer>
 

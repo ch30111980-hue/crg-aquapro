@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" fill="none">
+  <defs>
+    <!-- Chrome Miroir 3D -->
+    <linearGradient id="chromeBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748B"/>
+      <stop offset="22%" stop-color="#E2E8F0"/>
+      <stop offset="45%" stop-color="#FFFFFF"/>
+      <stop offset="70%" stop-color="#94A3B8"/>
+      <stop offset="90%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <linearGradient id="chromeSpout" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#CBD5E1"/>
+      <stop offset="80%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <!-- Cascade d'Eau Lumineuse 3D -->
+    <linearGradient id="aquaCascade" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#E0FFFF" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#00F0FF" stop-opacity="0.85"/>
+      <stop offset="80%" stop-color="#0077FF" stop-opacity="0.65"/>
+      <stop offset="100%" stop-color="#00F0FF" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow3D" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Halo 3D au sol -->
+  <ellipse cx="185" cy="282" rx="115" ry="20" fill="rgba(0, 240, 255, 0.22)" filter="url(#glow3D)"/>
+  <ellipse cx="185" cy="282" rx="75" ry="11" fill="rgba(0, 240, 255, 0.4)"/>
+
+  <!-- Socle Bague Laiton Chromé -->
+  <ellipse cx="135" cy="264" rx="52" ry="12" fill="#1E293B" stroke="#00F0FF" stroke-width="1.2"/>
+  <path d="M85 256 C85 263 185 263 185 256 L182 244 C182 250 88 250 88 244 Z" fill="url(#chromeBody)"/>
+
+  <!-- Corps Cylindrique Incliné Architecture Italienne -->
+  <path d="M94 246 L104 96 C104 88 166 88 166 96 L176 246 C176 254 94 254 94 246 Z" fill="url(#chromeBody)"/>
+  <!-- Reflet spéculaire vertical -->
+  <path d="M116 96 L110 245 L124 245 L128 96 Z" fill="#FFFFFF" opacity="0.65"/>
+
+  <!-- Bec Déversant Large Effet Cascade -->
+  <path d="M126 112 L256 96 C268 95 276 102 272 110 L248 134 C242 140 230 142 216 142 L134 146 Z" fill="url(#chromeSpout)" stroke="#E2E8F0" stroke-width="1"/>
+  <!-- Gorge Vitrée Cyan du Bec Cascade -->
+  <path d="M148 112 L262 100 L244 122 L148 126 Z" fill="#00E5FF" opacity="0.55"/>
+
+  <!-- Manette Supérieure Design Monocommande -->
+  <path d="M102 88 C102 76 168 76 168 88 L166 98 C166 92 104 92 104 98 Z" fill="url(#chromeBody)"/>
+  <!-- Levier Plat Ultra-Slim -->
+  <path d="M112 72 L228 52 C236 50 240 56 234 60 L166 82 L106 84 Z" fill="url(#chromeSpout)" stroke="#FFFFFF" stroke-width="0.9"/>
+  <!-- Indicateur Eau Froide / Flamme Chaude sur la manette -->
+  <circle cx="154" cy="84" r="3" fill="#00F0FF"/>
+  <circle cx="163" cy="84" r="3" fill="#FF3D00"/>
+
+  <!-- Cascade d'Eau Cristalline en Mouvement 3D -->
+  <g filter="url(#glow3D)">
+    <path d="M218 132 C236 165 244 215 242 278 L202 278 C206 218 202 168 188 136 Z" fill="url(#aquaCascade)"/>
+    <!-- Filets de lumière dans la cascade -->
+    <path d="M212 136 C224 175 228 225 226 276" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.8"/>
+    <path d="M226 134 C236 175 240 225 238 276" stroke="#80FFFF" stroke-width="1.6" stroke-linecap="round" opacity="0.7"/>
+    <!-- Ondulations d'impact 3D -->
+    <ellipse cx="222" cy="278" rx="36" ry="7" stroke="#00F0FF" stroke-width="2" fill="none"/>
+    <ellipse cx="222" cy="278" rx="54" ry="11" stroke="#00F0FF" stroke-width="1" stroke-dasharray="6 4" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Badge 3D Miro Italy -->
+  <g transform="translate(22, 34)">
+    <rect x="0" y="0" width="112" height="26" rx="13" fill="rgba(4, 12, 28, 0.9)" stroke="#00F0FF" stroke-width="1.2"/>
+    <circle cx="14" cy="13" r="5" fill="#10B981"/>
+    <text x="26" y="17" font-family="'Outfit', sans-serif" font-weight="800" font-size="10.5" fill="#FFFFFF">MIRO ITALIE 3D</text>
+  </g>
+</svg>

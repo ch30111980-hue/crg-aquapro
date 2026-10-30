@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 380" width="100%" height="100%">
+  <defs>
+    <!-- Royal PVD Brushed Gold Metallic Gradient -->
+    <linearGradient id="goldBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6E4B10"/>
+      <stop offset="18%" stop-color="#D4AF37"/>
+      <stop offset="38%" stop-color="#FFF2B2"/>
+      <stop offset="52%" stop-color="#E5B84B"/>
+      <stop offset="75%" stop-color="#9A6F1A"/>
+      <stop offset="92%" stop-color="#F3D068"/>
+      <stop offset="100%" stop-color="#5C3D09"/>
+    </linearGradient>
+
+    <linearGradient id="goldSpout" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF4B8"/>
+      <stop offset="28%" stop-color="#E5B84B"/>
+      <stop offset="60%" stop-color="#8B6313"/>
+      <stop offset="85%" stop-color="#F5D77F"/>
+      <stop offset="100%" stop-color="#523607"/>
+    </linearGradient>
+
+    <linearGradient id="goldDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4A3208"/>
+      <stop offset="50%" stop-color="#261903"/>
+      <stop offset="100%" stop-color="#120B01"/>
+    </linearGradient>
+
+    <!-- Warm Hydro-Gold Water Stream -->
+    <linearGradient id="aquaGoldStream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="25%" stop-color="#00F0FF" stop-opacity="0.88"/>
+      <stop offset="65%" stop-color="#0088FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#E5B84B" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="goldHoloBase" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E5B84B" stop-opacity="0.55"/>
+      <stop offset="45%" stop-color="#FF5E00" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#030711" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glowGold" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="dropShadow3D" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- 3D Pedestal Ring -->
+  <ellipse cx="190" cy="322" rx="132" ry="26" fill="url(#goldHoloBase)" />
+  <ellipse cx="190" cy="322" rx="100" ry="17" fill="none" stroke="#E5B84B" stroke-width="1.6" stroke-dasharray="10 6" opacity="0.7" />
+  <ellipse cx="190" cy="322" rx="68" ry="11" fill="none" stroke="#00F0FF" stroke-width="1.2" opacity="0.55" />
+
+  <g filter="url(#dropShadow3D)">
+    <!-- Escutcheon Base Plate -->
+    <ellipse cx="155" cy="306" rx="54" ry="13" fill="url(#goldDark)" stroke="#E5B84B" stroke-width="1.2"/>
+    <path d="M 105 298 C 105 290, 205 290, 205 298 L 209 306 C 209 315, 101 315, 101 306 Z" fill="url(#goldBody)"/>
+
+    <!-- Tall Architectural Cylindrical Body (Swan-Neck High Rise) -->
+    <path d="M 122 145 L 188 145 L 194 298 C 194 306, 116 306, 116 298 Z" fill="url(#goldBody)"/>
+    <!-- Knurled Luxury Ring Collar -->
+    <rect x="119" y="268" width="72" height="10" rx="3" fill="url(#goldSpout)" stroke="#523607" stroke-width="0.8"/>
+    <rect x="121" y="152" width="68" height="8" rx="3" fill="url(#goldSpout)" stroke="#523607" stroke-width="0.8"/>
+
+    <!-- Specular Vertical Highlight -->
+    <rect x="142" y="148" width="11" height="148" fill="#FFF8D6" opacity="0.45"/>
+
+    <!-- High-Arc Swan Spout -->
+    <path d="M 134 150
+             C 134 62, 268 58, 282 146
+             L 254 152
+             C 244 96, 166 98, 166 150 Z"
+          fill="url(#goldSpout)" stroke="#FFF2B2" stroke-width="0.9"/>
+
+    <!-- Aerator Nozzle -->
+    <ellipse cx="268" cy="150" rx="15" ry="6" transform="rotate(-10 268 150)" fill="url(#goldDark)" stroke="#E5B84B" stroke-width="1.2"/>
+
+    <!-- Side Precision Joystick Mixer Handle -->
+    <rect x="188" y="198" width="24" height="22" rx="5" fill="url(#goldBody)" stroke="#523607" stroke-width="0.8"/>
+    <rect x="206" y="148" width="8" height="64" rx="4" fill="url(#goldSpout)" stroke="#FFF4B8" stroke-width="0.7"/>
+    <!-- Hot/Cold Jewel Indicator -->
+    <circle cx="198" cy="209" r="3" fill="#FF2A3B"/>
+    <circle cx="198" cy="216" r="3" fill="#00F0FF"/>
+  </g>
+
+  <!-- Crystalline Water Stream from High-Arc Spout -->
+  <g filter="url(#glowGold)">
+    <path d="M 258 154
+             C 260 205, 262 265, 256 320
+             L 278 320
+             C 278 265, 276 205, 276 152 Z"
+          fill="url(#aquaGoldStream)"/>
+    <path d="M 265 156 L 264 316" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" opacity="0.85"/>
+    <ellipse cx="267" cy="320" rx="34" ry="8" fill="#00F0FF" opacity="0.5"/>
+    <circle cx="242" cy="310" r="3" fill="#FFF2B2" opacity="0.9"/>
+    <circle cx="292" cy="306" r="2.5" fill="#00F0FF" opacity="0.9"/>
+  </g>
+
+  <!-- Floating Luxury PVD Badge -->
+  <g transform="translate(22, 42)">
+    <rect x="0" y="0" width="124" height="32" rx="16" fill="#081226" fill-opacity="0.88" stroke="#E5B84B" stroke-width="1.3"/>
+    <circle cx="18" cy="16" r="5" fill="#E5B84B"/>
+    <text x="30" y="20" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="11" fill="#FFF4B8" letter-spacing="1">OR BROSSÉ PVD</text>
+  </g>
+</svg>
